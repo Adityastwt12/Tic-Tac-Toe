@@ -1,0 +1,65 @@
+/* style.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff7eb9, #ff65a3, #7afcff, #feff9c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+header {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 4px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ececec;
+}
+
+.cell:active {
+    background-color: #ddd;
+}
