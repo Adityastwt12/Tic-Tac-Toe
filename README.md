@@ -19,12 +19,12 @@ cd tic-tac-toe
 bash
 cd tic-tac-toe
 
-Usage
+#Usage
 To start the game, run:
 
 
 npm start
-How to Play
+##How to Play
 The game is played on a 3x3 grid.
 
 Player 1 is 'X' and Player 2 is 'O'. Players take turns placing their marks in empty squares.
@@ -33,7 +33,7 @@ The first player to get three of their marks in a row (vertically, horizontally,
 
 If all nine squares are full and neither player has three in a row, the game is a draw.
 
-Contributing
+##Contributing
 If you would like to contribute to this project, please follow these guidelines:
 
 Fork the repository.
